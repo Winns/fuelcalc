@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PEKA-TV</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Favicon -->
+	
+	<!-- Old IE icon 32x32 -->
+	<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+	
+	<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+	<link rel="apple-touch-icon" href="/favicon-180x180.png">
+	
+	<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
+	<link rel="icon" href="/favicon-192x192.png">
+	
+	<!-- END Favicon -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/compiled.css">
+</head>
+<body>
+
+	<!-- Background -->
+	<div id="bg"></div>
+	<!-- END Background -->
+
+	<!-- Pages -->
+	<div id="pages">
+
+		<!-- Calculator -->
+		<div id="page-calculator" class="page">
+			<div class="g-wrap">
+
+				<div class="g-page-title">
+					<i class="fa fa-calculator"></i>
+					Fuel calculator
+				</div>
+
+				<form>
+					<ul class="inputs">
+						<li>
+							<h3>Trip distance <em>km</em></h3>
+							<div class="g-input-wrapper full">
+								<input name="distance" type="number" step="0.01" placeholder="...">
+							</div>
+						</li>
+
+						<li>
+							<h3>Fuel consumption <em>L / 100 km</em></h3>
+							<div class="g-input-wrapper full">
+								<input name="consumption" type="number" step="0.01" placeholder="...">
+							</div>
+						</li>
+
+						<li>
+							<h3>Fuel price <em>Per one litre</em></h3>
+							<div class="g-input-wrapper full">
+								<input name="price" type="number" step="0.01" placeholder="...">
+							</div>
+						</li>
+					</ul>
+				</form>
+
+
+				<div class="btn-calc g-button full">
+					Calculate
+					<span class="result"><i class="fa fa-usd"></i></span>
+				</div>
+
+			</div>
+		</div>
+		<!-- END Calculator -->
+
+		<!-- Statistic -->
+		<div id="page-statistic" class="page">
+			statistic
+		</div>
+		<!-- END Statistic -->
+
+		<!-- Statistic -->
+		<div id="page-about" class="page">
+			about
+		</div>
+		<!-- END Statistic -->
+
+	</div>
+	<!-- END Pages -->
+
+	<!-- Menu -->
+	<div id="menu">
+		<div class="btn-trigger js-switcher" data-switcher-target="#menu">
+			<i class="fa fa-bars"></i>
+		</div>
+
+		<div class="content">
+
+			<ul class="list">
+				<li class="js-app-link" data-target="calculator">
+					<i class="fa fa-calculator"></i>
+					Fuel Calculator
+				</li>
+				<li class="js-app-link" data-target="statistic">
+					<i class="fa fa-area-chart"></i>
+					Statistic
+				</li>
+				<li class="js-app-link" data-target="about">
+					<i class="fa fa-question"></i>
+					About
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="swipe-trigger"></div>
+	</div>
+	<!-- END Background -->
+
+
+
+	<!-- App -->
+	<script>
+		var app = {
+			page: {}
+		};
+	</script>
+
+	<!-- Libs -->
+	<script src="js/helpers/jquery.min.js"></script>
+	<script src="js/helpers/jquery.transit.min.js"></script>
+	<script src="js/helpers/hammer.min.js"></script>
+	<script src="js/helpers/psdev.validate.js"></script>
+
+	<!-- Core -->
+	<script src="js/helpers/helpers.js"></script>
+	<script src="js/helpers/page.js"></script>
+
+	<!-- Views -->
+	<script src="js/view/home.view.js"></script>
+	<script src="js/view/calculator.view.js"></script>
+
+	<!-- Widgets -->
+	<script src="js/widgets/menu.widget.js"></script>
+	
+
+	<!-- Pages -->
+	<script src="js/page/calculator.page.js"></script>
+	<script src="js/page/statistic.page.js"></script>
+	<script src="js/page/about.page.js"></script>
+
+	<!-- App -->
+	<script src="js/app.js"></script>
+	
+</body>
+</html>
